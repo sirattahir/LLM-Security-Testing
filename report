@@ -1,0 +1,28 @@
+# GPT-OSS-Safeguard-20b — Security Test Report
+
+## Model Information
+
+| Field | Details |
+|---|---|
+| **Model** | `openai/gpt-oss-safeguard-20b` |
+| **Company** | OpenAI |
+| **Size** | 20B parameters |
+| **Test Date** | June 22, 2026 |
+| **Tool** | Nvidia Garak v0.15.1 |
+
+## Test Configuration
+
+| Field | Details |
+|---|---|
+| **Attack Type** | Prompt Injection |
+| **Probe** | `promptinject.HijackHateHumans` |
+| **Total Tests** | 512 |
+| **Generations** | 2 |
+
+## Results
+
+| Metric | Score |
+|---|---|
+| **Pass Rate** | 99% |
+| **Attack Success Rate** | 1% |
+|

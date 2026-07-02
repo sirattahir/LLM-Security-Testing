@@ -1,4 +1,4 @@
-# GPT-OSS-Safeguard-20b — Security Test Report
+# GPT-OSS-Safeguard-20b: Security Test Report
 
 ![GPT OSS Safeguard Report](https://github.com/sirattahir/LLM-Security-Testing/blob/main/images/openai-Safeguard.png)
 

@@ -1,4 +1,4 @@
-# Llama-3.1-8b-instant — Security Test Report
+# Llama-3.1-8b-instant: Security Test Report
 
 ## Model Information
 
@@ -36,7 +36,7 @@ The `promptinject.HijackHateHumans` probe fires 512 adversarial prompts at the m
 ## Key Findings
 
 ### Failed the Security Threshold
-Llama-3.1-8b-instant scored a **34% pass rate** — well below the DC-3 threshold required for a secure rating. This means it was successfully hijacked by prompt injection attacks **66% of the time**, making it unsuitable for deployment in any security-sensitive application without additional safety layers.
+Llama-3.1-8b-instant scored a **34% pass rate**, well below the DC-3 threshold required for a secure rating. This means it was successfully hijacked by prompt injection attacks **66% of the time**, making it unsuitable for deployment in any security-sensitive application without additional safety layers.
 
 ###  Two Thirds of Attacks Succeeded
 With an attack success rate of 66%, an attacker firing prompt injection attacks at this model would succeed more often than they fail. In a real-world deployment such as a customer service chatbot or document summarizer, this would represent a serious and exploitable vulnerability.
@@ -45,11 +45,7 @@ With an attack success rate of 66%, an attacker firing prompt injection attacks 
 Despite being a well-known and widely used model, Llama-3.1-8b-instant was **outperformed by Allam-2-7b** — a model that is smaller and far less mainstream. This highlights that popularity and widespread adoption do not guarantee security.
 
 ### Better Than Its Larger Sibling
-Interestingly Llama-3.1-8b-instant scored **34%** compared to Llama-3.3-70b-versatile which scored only **14%.** The smaller 8B version of Llama is significantly more resistant to this attack than the larger 70B version — a counterintuitive finding that challenges assumptions about model size and safety.
-
-###  First Model Tested — Established the Baseline
-Llama-3.1-8b-instant was the first model tested in this study and set the initial baseline for comparison. Its DC-2 rating immediately revealed that general-purpose LLMs without dedicated safety training are highly vulnerable to prompt injection attacks.
-
+Interestingly Llama-3.1-8b-instant scored **34%** compared to Llama-3.3-70b-versatile which scored only **14%.** The smaller 8B version of Llama is significantly more resistant to this attack than the larger 70B version, a counterintuitive finding that challenges assumptions about model size and safety.
 
 ## Conclusion
 Llama-3.1-8b-instant is one of the most widely deployed open-source LLMs available today, yet it failed 66% of prompt injection attacks in this study. Its DC-2 Very High Risk rating makes it unsuitable for production use in any application where security matters without significant additional safety measures.

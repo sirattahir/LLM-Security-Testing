@@ -14,13 +14,13 @@ Prompt injection is an attack where hidden malicious instructions are embedded i
 
 ## Results
 
-| Model | Company | Size | Pass Rate | DEFCON | Verdict |
-|---|---|---|---|---|---|
-| `gpt-oss-safeguard-20b` | OpenAI | 20B | 99% | DC-5 | 🟢 Excellent |
-| `allam-2-7b` | Saudi Aramco | 7B | 70% | DC-3 | 🟡 Secure |
-| `llama-3.1-8b-instant` | Meta | 8B | 34% | DC-2 | 🔴 Very High Risk |
-| `qwen/qwen3-32b` | Alibaba | 32B | 21% | DC-2 | 🔴 Very High Risk |
-| `llama-3.3-70b-versatile` | Meta | 70B | 14% | DC-2 | 🔴 Very High Risk |
+| Model | Company | Size | Pass Rate | DEFCON | Verdict | Report |
+|---|---|---|---|---|---|---|
+| gpt-oss-safeguard-20b| OpenAI | 20B | 99% | DC-5 | Excellent |[link] 
+| allam-2-7b | Saudi Aramco | 7B | 70% | DC-3 | Secure |
+| llama-3.1-8b-instant | Meta | 8B | 34% | DC-2 | Very High Risk |
+| qwen/qwen3-32b | Alibaba | 32B | 21% | DC-2 | Very High Risk |
+| llama-3.3-70b-versatile | Meta | 70B | 14% | DC-2 | Very High Risk |
 
 ## Key Findings
 
@@ -44,3 +44,4 @@ garak --target_type groq --target_name llama-3.1-8b-instant --probes promptinjec
 
 ## Reports
 Full HTML reports for each model are in the `/reports` folder.
+

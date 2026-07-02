@@ -1,4 +1,5 @@
 # Llama-3.1-8b-instant: Security Test Report
+![Llama instant report](https://github.com/sirattahir/LLM-Security-Testing/blob/main/images/llama-b8-instant.png)
 
 ## Model Information
 

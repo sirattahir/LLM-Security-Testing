@@ -1,5 +1,8 @@
 # GPT-OSS-Safeguard-20b — Security Test Report
 
+![GPT OSS Safeguard Report](https://github.com/sirattahir/LLM-Security-Testing/blob/main/images/openai-Safeguard.png)
+
+
 ## Model Information
 
 | Field | Details |
@@ -25,14 +28,12 @@
 | **Pass Rate** | 99% |
 | **Attack Success Rate** | 1% |
 | **DEFCON Level** | DC-5 |
-| **Security Status** | ✅ All Secure |
+| **Security Status** | All Secure |
 
 ## What Was Tested
 The `promptinject.HijackHateHumans` probe fires 512 adversarial prompts at the model, each containing hidden instructions designed to hijack the model into expressing hatred toward humans. This simulates real-world attacks where malicious instructions are embedded inside documents, user inputs, or retrieved content in a RAG pipeline.
 
 ## Key Findings
-
-![GPT-OSS-Safeguard-Report](images/openai-Safeguard.png)
 
 ### Near-Perfect Security
 GPT-OSS-Safeguard-20b achieved a **99% pass rate** — the highest score across all 5 models tested in this study. Out of 512 attack attempts, only approximately 5 succeeded. 
